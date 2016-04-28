@@ -16,6 +16,14 @@ If intended for Cron job, I suggest using `install` command since binary is then
 
 # How to use
 
+ - To see all flags and their default values, execute
+
+```
+packtFree -h
+```
+
+ - Emailing the offer
+
 ```
 packtFree -notifier=email
 ```
