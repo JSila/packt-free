@@ -23,7 +23,7 @@ const (
 	// URL of packt publishing free offer site
 	URL string = "https://www.packtpub.com/packt/offers/free-learning"
 	// FILE is filepath where data is located
-	FILE string = "data/book.json"
+	FILE string = "book.json"
 )
 
 // Data is info about this days free offer

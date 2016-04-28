@@ -18,7 +18,7 @@ const (
 	// Subject is email's Subject line
 	Subject = "%s - free today from Packt Publishing"
 	// EmailTmpl is path to email template
-	EmailTmpl = "data/email.tmpl"
+	EmailTmpl = "email.tmpl"
 )
 
 // Mail contains data for client initializing and holds email data

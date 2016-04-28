@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"os"
 
 	"github.com/JSila/packtFree"
 	"github.com/JSila/packtFree/log"
@@ -12,8 +13,13 @@ import (
 )
 
 func main() {
-	var notifier = flag.String("notifier", "stdout", "How to notify (via email or stdout)?")
+	var notifier = flag.String("notifier", "stdout", "How to notify user(s) - via email or stdout?")
+	var cwd string
+	flag.StringVar(&cwd, "cwd", "./", "Directory where config files and email template are")
+
 	flag.Parse()
+
+	os.Chdir(cwd)
 
 	if err := packtFree.Get(); err != nil {
 		log.Log.Panic(err)
