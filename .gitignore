@@ -1,6 +1,5 @@
 /cmd/config/mailgun.json
 /cmd/config/recipients.json
 /cmd/log/packtFree.log
-/cmd/data/book.json
-/cmd/data/email.tmpl
+/cmd/book.json
 /cmd/packtFree
